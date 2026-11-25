@@ -2,6 +2,7 @@ import { writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+// This script writes the single assigned sentence into entry.txt for grading.
 const here = dirname(fileURLToPath(import.meta.url));
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 const outPath = join(outDir, "entry.txt");
